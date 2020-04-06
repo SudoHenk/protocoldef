@@ -1,0 +1,747 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated>
+      <config projectName="OpenSSL Corpus" targetName="openssl_corpus" />
+      <config projectName="OpenSSL Corpus" targetName="selftls" />
+    </generated>
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="56ca3171-1df0-4e33-9c10-997efbe26149" name="Default Changelist" comment="" />
+    <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/selftls.c">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3345">
+              <caret line="223" column="52" selection-start-line="223" selection-start-column="36" selection-end-line="223" selection-end-column="52" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/corpus.c">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="633">
+              <caret line="200" column="32" selection-start-line="200" selection-start-column="32" selection-end-line="200" selection-end-column="32" />
+              <folding>
+                <element signature="e#311#330#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cmake-build-debug/HandshakeCompleted.trace">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="25" selection-start-column="25" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" selection-start-line="8" selection-end-line="8" selection-end-column="56" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/openssl-OpenSSL_1_0_1f/ssl/s3_srvr.c">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17685">
+              <caret line="1179" column="28" selection-start-line="1179" selection-start-column="28" selection-end-line="1179" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/openssl-OpenSSL_1_0_1f/ssl/ssl_locl.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3780">
+              <caret line="252" selection-start-line="252" selection-end-line="252" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/openssl-OpenSSL_1_0_1f/ssl/t1_lib.c">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="38775">
+              <caret line="2585" column="20" selection-start-line="2585" selection-start-column="20" selection-end-line="2585" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/openssl-OpenSSL_1_0_1f/ssl/tls1.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3720">
+              <caret line="248" column="6" selection-start-line="248" selection-start-column="6" selection-end-line="248" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/openssl-OpenSSL_1_1_1d/ssl/t1_trce.c">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="6825">
+              <caret line="455" column="1" selection-start-line="455" selection-start-column="1" selection-end-line="490" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cmake-build-debug/HelloCompleted.trace">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="17" selection-start-column="17" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CMakeLists.txt" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>SSL_ST_OK</find>
+      <find>SSL_OP_NO_TICKET</find>
+      <find>x18</find>
+      <find>client_hello</find>
+      <find>tls1_proc</find>
+      <find>get_server_hello</find>
+      <find>SSL3_RT_APPLICATION_DATA</find>
+      <find>DTLS1_MT_HELLO_VERIFY_REQUEST</find>
+      <find>mac</find>
+      <find>mac_key</find>
+      <find>seq_num</find>
+      <find>WITH_NULL_NULL</find>
+      <find>mackey</find>
+      <find>16</find>
+      <find>int HMAC_Init_ex</find>
+      <find>seq</find>
+      <find>SSL3_MT_HELLO_REQUEST</find>
+      <find>write_mac_secret</find>
+      <find>MAIKEL</find>
+      <find>heartbeat</find>
+      <find>SSL_F_SSL3_GET_RECORD</find>
+      <find>application_data</find>
+      <find>./openssl_corpus_afl &quot;HelloCompleted.trace&quot; &quot;crash_1&quot;</find>
+      <find>ssl_parse_clienthello_tlsext</find>
+      <find>TLSEXT_TYPE_</find>
+      <find>TLSEXT_TYPE_server_name</find>
+      <find>7301</find>
+      <find>s2n</find>
+      <find>tls1_process_heartbeat</find>
+      <find>ifi</find>
+    </findStrings>
+    <replaceStrings>
+      <replace />
+    </replaceStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$/openssl-OpenSSL_1_0_1f</dir>
+      <dir>$PROJECT_DIR$/openssl-OpenSSL_1_1_1d</dir>
+    </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/selftls" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/cmake-build-debug/HelloCompleted.trace" />
+        <option value="$PROJECT_DIR$/openssl-OpenSSL_1_0_1f_asan/crypto/rand/rand_lib.c" />
+        <option value="$PROJECT_DIR$/openssl-OpenSSL_1_1_1d_asan/crypto/rand/rand_lib.c" />
+        <option value="$PROJECT_DIR$/helperFunctions.c" />
+        <option value="$PROJECT_DIR$/selftls/selftls.c" />
+        <option value="$PROJECT_DIR$/openssl-OpenSSL_1_0_1f/crypto/rand/rand_lib.c" />
+        <option value="$PROJECT_DIR$/openssl-OpenSSL_1_1_1d/crypto/rand/rand_lib.c" />
+        <option value="$PROJECT_DIR$/openssl-OpenSSL_1_0_1f/crypto/evp/evp_enc.c" />
+        <option value="$PROJECT_DIR$/openssl-OpenSSL_1_0_1f/ssl/ssl_sess.c" />
+        <option value="$PROJECT_DIR$/openssl-OpenSSL_1_0_1f/ssl/t1_lib.c" />
+        <option value="$PROJECT_DIR$/openssl-OpenSSL_1_0_1f/ssl/s3_clnt.c" />
+        <option value="$PROJECT_DIR$/openssl-OpenSSL_1_0_1f/ssl/s3_srvr.c" />
+        <option value="$PROJECT_DIR$/cmake-build-debug/afl-build/HandshakeCompleted.trace" />
+        <option value="$PROJECT_DIR$/openssl-OpenSSL_1_0_1f/ssl/s3_both.c" />
+        <option value="$PROJECT_DIR$/remove_rng_1_0_1f" />
+        <option value="$PROJECT_DIR$/remove_rng_1_1_1d.patch" />
+        <option value="$PROJECT_DIR$/notes.txt" />
+        <option value="$PROJECT_DIR$/selftls.c" />
+        <option value="$PROJECT_DIR$/openssl-OpenSSL_1_0_1f/ssl/t1_enc.c" />
+        <option value="$PROJECT_DIR$/openssl-OpenSSL_1_0_1f/ssl/s3_pkt_old.c" />
+        <option value="$PROJECT_DIR$/traceReader.c" />
+        <option value="$PROJECT_DIR$/openssl-OpenSSL_1_0_1f/ssl/s3_pkt.c" />
+        <option value="$PROJECT_DIR$/corpus.c" />
+        <option value="$PROJECT_DIR$/cmake-build-debug/HandshakeCompleted.trace" />
+        <option value="$PROJECT_DIR$/CMakeLists.txt" />
+      </list>
+    </option>
+  </component>
+  <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
+  <component name="ProjectFrameBounds" extendedState="5">
+    <option name="y" value="27" />
+    <option name="width" value="950" />
+    <option name="height" value="1020" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="OpenSSL Corpus" type="b2602c69:ProjectViewProjectNode" />
+              <item name="openssl-corpus" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="OpenSSL Corpus" type="b2602c69:ProjectViewProjectNode" />
+              <item name="openssl-corpus" type="462c0819:PsiDirectoryNode" />
+              <item name="cmake-build-debug" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="OpenSSL Corpus" type="b2602c69:ProjectViewProjectNode" />
+              <item name="openssl-corpus" type="462c0819:PsiDirectoryNode" />
+              <item name="openssl-OpenSSL_1_1_1d" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="OpenSSL Corpus" type="b2602c69:ProjectViewProjectNode" />
+              <item name="openssl-corpus" type="462c0819:PsiDirectoryNode" />
+              <item name="openssl-OpenSSL_1_1_1d" type="462c0819:PsiDirectoryNode" />
+              <item name="ssl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="OpenSSL Corpus" type="b2602c69:ProjectViewProjectNode" />
+              <item name="openssl-corpus" type="462c0819:PsiDirectoryNode" />
+              <item name="selftls" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/openssl-OpenSSL_1_0_1f/ssl" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/cmake-build-debug" />
+      <recent name="$PROJECT_DIR$/cmake-build-debug/old" />
+      <recent name="$PROJECT_DIR$/selftls" />
+      <recent name="$PROJECT_DIR$/cmake-build-debug/test" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/openssl-OpenSSL_1_0_1f/ssl" />
+      <recent name="$PROJECT_DIR$/cmake-build-debug/afl-build" />
+      <recent name="$PROJECT_DIR$/cmake-build-debug" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/openssl-OpenSSL_1_1_1d/crypto/rand" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="CMake Application.openssl_corpus">
+    <configuration name="ext-all openssl_corpus" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="&quot;ClientHelloExt.trace&quot; &quot;packet-heartbleed3&quot;" PASS_PARENT_ENVS_2="true" PROJECT_NAME="OpenSSL Corpus" TARGET_NAME="openssl_corpus" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="OpenSSL Corpus" RUN_TARGET_NAME="openssl_corpus">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="openssl_corpus" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="&quot;HandshakeCompleted.trace&quot; &quot;packet-heartbleed3&quot;" PASS_PARENT_ENVS_2="true" PROJECT_NAME="OpenSSL Corpus" TARGET_NAME="openssl_corpus" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="OpenSSL Corpus" RUN_TARGET_NAME="openssl_corpus">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="selftls" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="OpenSSL Corpus" TARGET_NAME="selftls" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="OpenSSL Corpus" RUN_TARGET_NAME="selftls">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="CMake Application.openssl_corpus" />
+      <item itemvalue="CMake Application.ext-all openssl_corpus" />
+      <item itemvalue="CMake Application.selftls" />
+    </list>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="56ca3171-1df0-4e33-9c10-997efbe26149" name="Default Changelist" comment="" />
+      <created>1578683467301</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1578683467301</updated>
+      <workItem from="1578683468467" duration="113899000" />
+      <workItem from="1584027281829" duration="599000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="114498000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="27" width="950" height="1020" extended-state="5" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29822618" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3298122" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.52029914" visible="true" weight="0.4471831" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49732906" weight="0.39906102" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Database Changes" order="7" />
+      <window_info anchor="bottom" id="Messages" order="8" sideWeight="0.56578946" weight="0.3298122" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49412394" weight="0.33685446" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50587606" side_tool="true" weight="0.33685446" />
+      <window_info anchor="bottom" id="Version Control" order="11" />
+      <window_info anchor="bottom" id="CMake" order="12" sideWeight="0.49780703" weight="0.3298122" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>result</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>SSL_get_error(server, result)</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>SSL_is_init_finished(server)</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>SSL_get_error(server, r)</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>(int)SSL_is_init_finished(client)</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>SSL_is_init_finished(client)</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>EVP_CIPHER_CTX_iv_length(ctx)</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>EVP_CIPHER_CTX_key_length(ctx)</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>iv</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/openssl-OpenSSL_1_1_1d/crypto/rand/rand_lib.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="955" column="18" selection-start-line="955" selection-start-column="18" selection-end-line="955" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/openssl-OpenSSL_1_0_1f/crypto/rand/rand_lib.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2191">
+          <caret line="169" column="5" selection-start-line="169" selection-start-column="5" selection-end-line="169" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/openssl-OpenSSL_1_0_1f/ssl/kssl.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25005">
+          <caret line="2126" column="15" selection-start-line="2126" selection-start-column="15" selection-end-line="2126" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/openssl-OpenSSL_1_0_1f/crypto/pkcs7/example.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="28" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/openssl-OpenSSL_1_1_1d/crypto/evp/evp_enc.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="215" selection-start-line="215" selection-end-line="215" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/openssl-OpenSSL_1_0_1f/crypto/evp/evp_enc.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-138">
+          <caret line="215" column="42" selection-start-line="213" selection-start-column="39" selection-end-line="215" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/openssl-OpenSSL_1_0_1f/ssl/s3_lib.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="3695" column="33" selection-start-line="3695" selection-start-column="13" selection-end-line="3695" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/openssl-OpenSSL_1_0_1f/ssl/ssl_lib.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="424" column="4" selection-start-line="424" selection-start-column="4" selection-end-line="424" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/openssl-OpenSSL_1_0_1f/ssl/ssl_sess.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="928" column="37" selection-start-line="928" selection-start-column="37" selection-end-line="928" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/lib/gcc/x86_64-linux-gnu/6/include/stddef.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="146">
+          <caret line="215" column="22" selection-start-line="215" selection-start-column="22" selection-end-line="215" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/openssl-OpenSSL_1_0_1f/ssl/ssl.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="146">
+          <caret line="422" column="26" selection-start-line="422" selection-start-column="11" selection-end-line="422" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/openssl-OpenSSL_1_0_1f/ssl/s23_srvr.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="611" column="36" selection-start-line="611" selection-start-column="36" selection-end-line="611" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/openssl-OpenSSL_1_0_1f/ssl/t1_srvr.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="78" column="20" selection-start-line="78" selection-start-column="20" selection-end-line="78" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/openssl-OpenSSL_1_0_1f/include/openssl/crypto.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="367" column="8" selection-start-line="367" selection-start-column="8" selection-end-line="367" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/openssl-OpenSSL_1_0_1f/include/openssl/evp.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="146">
+          <caret line="559" column="4" selection-start-line="559" selection-start-column="4" selection-end-line="559" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/openssl-OpenSSL_1_0_1f/include/openssl/tls1.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="146">
+          <caret line="353" column="8" selection-start-line="353" selection-start-column="8" selection-end-line="353" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/openssl-OpenSSL_1_0_1f/ssl/s2_srvr.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="906" column="17" selection-start-line="906" selection-start-column="17" selection-end-line="906" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/afl-build/server.key">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/openssl-OpenSSL_1_0_1f/ssl/ssl_stat.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="341" column="26" selection-start-line="341" selection-start-column="5" selection-end-line="341" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/openssl-OpenSSL_1_0_1f/ssl/s3_both.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="251" selection-start-line="251" selection-end-line="251" />
+          <folding>
+            <element signature="e#9379#9510#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/remove_rng_1_1_1d.patch">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="24" column="37" lean-forward="true" selection-start-line="24" selection-start-column="37" selection-end-line="24" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/remove_rng_1_0_1f" />
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/afl-build/HandshakeCompleted.trace">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="29" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/openssl-OpenSSL_1_0_1f/ssl/s2_clnt.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="210" column="45" selection-start-line="210" selection-start-column="29" selection-end-line="210" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/openssl-OpenSSL_1_0_1f/ssl/d1_pkt.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="1347" column="26" lean-forward="true" selection-start-line="1347" selection-start-column="26" selection-end-line="1347" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/openssl-OpenSSL_1_1_1d/include/openssl/ssl3.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="274">
+          <caret line="294" column="30" selection-start-line="294" selection-start-column="9" selection-end-line="294" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/openssl-OpenSSL_1_0_1f/ssl/s3_clnt.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="840" column="40" selection-start-line="840" selection-start-column="40" selection-end-line="840" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/openssl-OpenSSL_1_0_1f/include/openssl/ssl.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="227">
+          <caret line="397" column="18" selection-start-line="397" selection-start-column="18" selection-end-line="397" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/openssl-OpenSSL_1_0_1f/include/openssl/ssl3.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="411" column="18" selection-start-line="411" selection-start-column="18" selection-end-line="411" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/openssl-OpenSSL_1_0_1f/crypto/hmac/hmac.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="44" column="70" selection-start-line="44" selection-start-column="67" selection-end-line="44" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/openssl-OpenSSL_1_0_1f/include/openssl/hmac.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="146">
+          <caret line="94" column="16" lean-forward="true" selection-start-line="94" selection-end-line="94" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/openssl-OpenSSL_1_0_1f/ssl/t1_enc.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="494" selection-start-line="494" selection-end-line="494" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/openssl-OpenSSL_1_0_1f/ssl/s3_pkt_old.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="482" column="70" selection-start-line="482" selection-start-column="70" selection-end-line="482" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/notes.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="26" selection-start-line="26" selection-end-line="26" selection-end-column="167" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/corpus_plot/exec_speed.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/corpus_plot/high_freq.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/corpus_plot/low_freq.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/openssl-OpenSSL_1_0_1f/ssl/t1_lib_old.c">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/selftls/selftls.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-810" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/traceReader.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-709">
+          <caret line="53" column="3" selection-start-line="53" selection-start-column="3" selection-end-line="53" selection-end-column="3" />
+          <folding>
+            <element signature="e#162#180#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/openssl-OpenSSL_1_0_1f/ssl/s3_pkt.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="617" column="45" selection-start-line="617" selection-start-column="29" selection-end-line="617" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/selftls.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3345">
+          <caret line="223" column="52" selection-start-line="223" selection-start-column="36" selection-end-line="223" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/HandshakeCompleted.trace">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="25" selection-start-column="25" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" selection-start-line="8" selection-end-line="8" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/openssl-OpenSSL_1_0_1f/ssl/s3_srvr.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17685">
+          <caret line="1179" column="28" selection-start-line="1179" selection-start-column="28" selection-end-line="1179" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/openssl-OpenSSL_1_0_1f/ssl/ssl_locl.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3780">
+          <caret line="252" selection-start-line="252" selection-end-line="252" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/openssl-OpenSSL_1_0_1f/ssl/t1_lib.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38775">
+          <caret line="2585" column="20" selection-start-line="2585" selection-start-column="20" selection-end-line="2585" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/openssl-OpenSSL_1_0_1f/ssl/tls1.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3720">
+          <caret line="248" column="6" selection-start-line="248" selection-start-column="6" selection-end-line="248" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/openssl-OpenSSL_1_1_1d/ssl/t1_trce.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6825">
+          <caret line="455" column="1" selection-start-line="455" selection-start-column="1" selection-end-line="490" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/HelloCompleted.trace">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="17" selection-start-column="17" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/corpus.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="633">
+          <caret line="200" column="32" selection-start-line="200" selection-start-column="32" selection-end-line="200" selection-end-column="32" />
+          <folding>
+            <element signature="e#311#330#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

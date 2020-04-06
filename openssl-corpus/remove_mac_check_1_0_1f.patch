@@ -1,0 +1,15 @@
+--- ssl/s3_pkt_old.c	2020-01-16 16:21:31.204428765 +0100
++++ ssl/s3_pkt.c	2020-01-18 20:40:39.480533459 +0100
+@@ -481,9 +481,9 @@
+ 		 * failure is directly visible from the ciphertext anyway,
+ 		 * we should not reveal which kind of error occured -- this
+ 		 * might become visible to an attacker (e.g. via a logfile) */
+-		al=SSL_AD_BAD_RECORD_MAC;
+-		SSLerr(SSL_F_SSL3_GET_RECORD,SSL_R_DECRYPTION_FAILED_OR_BAD_RECORD_MAC);
+-		goto f_err;
++//		al=SSL_AD_BAD_RECORD_MAC;
++//		SSLerr(SSL_F_SSL3_GET_RECORD,SSL_R_DECRYPTION_FAILED_OR_BAD_RECORD_MAC);
++//		goto f_err;
+ 		}
+ 
+ 	/* r->length is now just compressed */

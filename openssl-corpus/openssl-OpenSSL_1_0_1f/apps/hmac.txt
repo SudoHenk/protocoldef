@@ -1,0 +1,1 @@
+HMAC-SHA256(../../cmake-build-debug/packet-hmac-test)= 842c1b2ce1730fdfaf78a2f41f9ee46bdcf6b8eb9dfa85a248c5bdf8f01619f7

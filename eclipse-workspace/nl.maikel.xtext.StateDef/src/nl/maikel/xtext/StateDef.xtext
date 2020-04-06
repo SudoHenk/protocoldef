@@ -1,0 +1,100 @@
+grammar nl.sudohenk.xtext.StateDef with org.eclipse.xtext.common.Terminals
+
+generate stateDef "http://www.sudohenk.nl/xtext/StateDef"
+
+// State machine
+StateMachine: 
+	'machine' name = ID 
+	('{'
+		// Message Structure description
+		((globalStructs += MessageStruct)* & 
+		(globalEnums += MessageEnum)* & 
+		(messages += Message)*)
+		// Finite State Machine description
+		'initial' initState = State &
+		(states += State)* &
+		(transitions += MessageTransition)* &
+		'end' endState = State
+	'}')?
+;
+
+State:
+	'state' name = ID
+;
+
+MessageTransition:
+	'transition' name = ID
+	('{'
+		'from' (currentState = State | anyState = 'any')
+		('received' 'messages' ('{'
+			(receivedMessages += Message)*
+		'}'
+		))?
+		('sent' 'messages' ('{'
+			(sentMessages += Message)*
+		'}'
+		))?
+		('go' nextState = State)?
+	'}')?
+;
+
+// Message layout
+terminal HEX         	: '0x' ('a'..'f'|'A'..'F'|'0'..'9')*;
+terminal DATATYPE	 	: ('uint'('8'|'16'|'24')|'opaque');
+terminal ENUMNAME		: ('a'..'z'|'_')+;
+
+Message:
+	'message' name = ID
+	('struct' ('{'
+			(structEntries += MessageStructEntry)+
+		'}'
+	))?
+;
+
+MessageStruct:
+	'struct' name = ID
+	('{'
+		(structEntries += MessageStructEntry)*
+	 '}')?
+;
+
+MessageStructEntry:
+	(dataType = DATATYPE | refType = ID) name = ENUMNAME (( byteRange = MessageByteRange | byteSize = MessageByteArray ))?
+	('=' (dataAssignment += MessageStructureDatatype ','?)+)?
+	';'
+;
+
+MessageByteRange:
+	'<' start=INT '..' end=INT '>'
+;
+
+MessageByteArray:
+	'[' size=INT ']'
+;
+
+MessageStructureStruct:
+	'{'
+		((values += MessageStructureDatatype) ','?)+
+	'}'
+;
+
+MessageStructureDatatype:
+	hexVal = HEX | enumVal = ENUMNAME | structVal = MessageStructureStruct | '[' (arrayVal += MessageStructureDatatype ','?)+ ']'
+;
+
+MessageEnum:
+	'enum'? name =  ID
+	('{'
+		(names += ENUMNAME '(' values += INT ')' ','?)+
+	 '}')?
+;
+
+
+
+
+
+
+
+
+
+

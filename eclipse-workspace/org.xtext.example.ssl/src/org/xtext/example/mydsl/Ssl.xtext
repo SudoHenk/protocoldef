@@ -1,0 +1,9 @@
+grammar org.xtext.example.mydsl.Ssl with org.eclipse.xtext.common.Terminals
+
+generate ssl "http://www.xtext.org/example/mydsl/Ssl"
+
+Model:
+	greetings+=Greeting*;
+	
+Greeting:
+	'Hello' name=ID '!';

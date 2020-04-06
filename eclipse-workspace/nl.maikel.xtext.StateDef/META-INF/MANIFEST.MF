@@ -1,0 +1,30 @@
+Manifest-Version: 1.0
+Automatic-Module-Name: nl.sudohenk.xtext.StateDef
+Bundle-ManifestVersion: 2
+Bundle-Name: nl.sudohenk.xtext.StateDef
+Bundle-Vendor: My Company
+Bundle-Version: 1.0.0.qualifier
+Bundle-SymbolicName: nl.sudohenk.xtext.StateDef; singleton:=true
+Bundle-ActivationPolicy: lazy
+Require-Bundle: org.eclipse.xtext,
+ org.eclipse.xtext.xbase,
+ org.eclipse.equinox.common;bundle-version="3.5.0",
+ org.eclipse.emf.ecore,
+ org.eclipse.xtext.xbase.lib;bundle-version="2.14.0",
+ org.antlr.runtime,
+ org.eclipse.xtext.util,
+ org.eclipse.emf.common,
+ org.eclipse.xtend.lib;bundle-version="2.14.0"
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Export-Package: nl.sudohenk.xtext.stateDef.impl,
+ nl.sudohenk.xtext.stateDef,
+ nl.sudohenk.xtext,
+ nl.sudohenk.xtext.stateDef.util,
+ nl.sudohenk.xtext.serializer,
+ nl.sudohenk.xtext.scoping,
+ nl.sudohenk.xtext.generator,
+ nl.sudohenk.xtext.validation,
+ nl.sudohenk.xtext.services,
+ nl.sudohenk.xtext.parser.antlr.internal,
+ nl.sudohenk.xtext.parser.antlr
+Import-Package: org.apache.log4j

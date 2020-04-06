@@ -1,0 +1,68 @@
+import "Example.interface"
+
+Project NewProject {
+
+	/*
+	 * Compound Interface is a group of interfaces that allows
+	 * using the group as a source for documentation and C++ generation
+	 */
+	Compound Interfaces {
+
+		MyCompoundInterface {
+			version
+			"1.0"
+
+			description
+			"Demo project."
+
+			interfaces // List the interfaces
+			Example type SSCF
+		}
+	}
+
+	Generate Documentations {
+
+		taskName for compound interface MyCompoundInterface {
+			template = "Template.docx"
+			DHF = 123456
+			author = "John Smith"
+			role = "Designer"
+		}
+	}
+
+	Generate CPP {
+
+		cppTaskCompound for compound interface MyCompoundInterface
+
+		/*
+		 * C++ and documentation generation can also be executed on a single interface
+		 */
+		cppTaskInterface for interface Example
+	}
+	
+	/* Sample CPP Stubs and Simulator Generation */
+	/*
+	Generate Stubs and Simulation
+	{
+		UIandStubs for interface IVendingMachine 
+		{
+			exclude notifications: X	// [Add: Notification Names present in Interface]
+			exclude commands: Y			// [Add: Command Names present in Interface]
+			exclude signals: Z			// [Add: Signal Names present in Interface]
+			latency: 5 seconds          // [Add: Time between Stub Actions]
+			parameters file: "*.input" 	// [Provide: Input Arguments for Events in Interface]
+		}
+	}*/
+	
+	/* Sample Test Scenario Generation */
+	/*
+	Generate Test Scenarios {
+		TestScn01 for interface IVendingMachine {
+			scenario file location: "C:\\Users\\berad\\Desktop\\GeneratedTestScenarioFiles\\IVendingMachine\\"
+			parameters file: "ip.input"
+			mode: SCENARIO
+			max search depth: 5
+		}
+	}
+	*/
+}

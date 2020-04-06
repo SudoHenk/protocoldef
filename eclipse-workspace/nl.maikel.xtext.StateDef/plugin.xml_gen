@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+<plugin>
+	<extension point="org.eclipse.emf.ecore.generated_package">
+		<package 
+			uri = "http://sudohenk.nl/xtext/StateDef"
+			class = "nl.sudohenk.xtext.stateDef.StateDefPackage"
+			genModel = "model/generated/StateDef.genmodel" />
+	</extension>
+</plugin>

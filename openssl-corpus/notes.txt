@@ -1,0 +1,62 @@
+cd openssl-OpenSSL_1_0_1f
+setarch i386 ./config -m32
+make
+
+
+
+cd openssl-OpenSSL_1_1_1d
+./Configure linux-x32
+make
+
+Only compile with 32 bits (for ASAN)
+
+Apply patch to remove randomness
+
+
+
+
+openssl s_server -key /home/sander/openssl-corpus/cmake-build-debug/server.key -cert /home/sander/openssl-corpus/cmake-build-debug/server.pem -accept 44330 -www -cipher 'NULL'
+openssl s_client -connect localhost:44330 -cipher NULL-MD5 -tls1_2
+
+
+
+AFL_USE_ASan=1 afl-gcc -fsanitize=address -m32 selftls.c -o cmake-build-debug/selftls_afl openssl-OpenSSL_1_0_1f/libssl.a openssl-OpenSSL_1_0_1f/libcrypto.a -ldl
+afl-fuzz -i selftls_in -o selftls_out ./selftls_afl 1 @@
+
+
+AFL_USE_ASan=1 afl-gcc -fsanitize=address -m32 corpus.c -o cmake-build-debug/openssl_corpus_afl openssl-OpenSSL_1_0_1f/libssl.a openssl-OpenSSL_1_0_1f/libcrypto.a -ldl
+cp packet-5 corpus_in
+afl-fuzz -i corpus_in -o corpus_out -m 2000 ./openssl_corpus_afl "HandshakeCompleted.trace" @@
+
+
+
+
+cd ../ && AFL_USE_ASan=1 afl-gcc -fsanitize=address -m32 corpus.c -o cmake-build-debug/openssl_corpus_afl openssl-OpenSSL_1_0_1f/libssl.a openssl-OpenSSL_1_0_1f/libcrypto.a -ldl && cd ./cmake-build-debug/ && ./openssl_corpus_afl "HandshakeCompleted.trace" packet-heartbleed3
+
+
+
+
+
+
+SSL_CTX_set_cipher_list(cctx, "ALL");
+
+
+
+
+
+
+
+
+TO USE ASAN/AFL
+
+Recompile openssl 101f: Edit Makefile
+add
+AFL_USE_Asan=1
+CC=afl-gcc
+
+then run
+make clean
+make
+
+
+Then recompile with above

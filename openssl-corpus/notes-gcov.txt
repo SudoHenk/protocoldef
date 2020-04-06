@@ -1,0 +1,111 @@
+cd openssl-OpenSSL_1_0_1f/
+ls
+nano Makefile
+make
+cd ../selftls/
+ls
+cd selftls && AFL_USE_ASan=1 afl-gcc -fprofile-arcs -ftest-coverage selftls.c -o selftls libssl.a libcrypto.a -ldl
+AFL_USE_ASan=1 afl-gcc -fprofile-arcs -ftest-coverage selftls.c -o selftls libssl.a libcrypto.a -ldl
+readelf -s selftls | egrep "\s(_+)?mcount\b"
+ls
+./selftls 
+ls
+rm packet*
+ls
+rm heart*
+readelf -s libcrypto.a | egrep "\s(_+)?mcount\b"
+readelf -s ../openssl-OpenSSL_1_0_1f/libcrypto.a | egrep "\s(_+)?mcount\b"
+cd ../openssl-OpenSSL_1_0_1f/
+ls
+make clean
+export CC="gcc -fprofile-arcs -ftest-coverage"; ./config
+make
+ls
+nano Makefile
+make clean
+make
+readelf -s libcrypto.a | egrep "\s(_+)?mcount\b"
+cd ..
+cd openssl-OpenSSL_1_0_1f/
+readelf -s libcrypto.a
+cd ../selftls/
+ls
+cp ../openssl-OpenSSL_1_0_1f/libcrypto.a ./
+cp ../openssl-OpenSSL_1_0_1f/libssl.a ./
+ls
+readelf libssl.a | grep -i gcov
+readelf -s libssl.a 
+ls
+AFL_USE_ASan=1 afl-gcc -fprofile-arcs -ftest-coverage selftls.c -o selftls libssl.a libcrypto.a -ldl
+ls
+readelf -s selftls
+ls
+./selftls 
+ls -la
+ls
+gcov selftls.c 
+lcov --coverage --directory . --output-file main_coverage.info
+lcov --directory . --output-file main_coverage.info
+lcov --summary --directory . --output-file main_coverage.info
+lcov --directory . --capture --output-file coverage.lcov
+ls
+genhtml coverage.lcov --output-directory out
+genhtml coverage.lcov --output-directory html
+ls
+readelf -s selftls
+readelf -s selftls > readelf.txt
+ls
+rm *.a
+AFL_USE_ASan=1 afl-gcc -fprofile-arcs -ftest-coverage selftls.c -o selftls ../openssl-OpenSSL_1_0_1f/libssl.a ../openssl-OpenSSL_1_0_1f/libcrypto.a -ldl
+./selftls 
+cd ../openssl-OpenSSL_1_0_1f/
+ls
+cp ../selftls/selftls.c 
+cp ../selftls/selftls.c .
+cp ../selftls/server* .
+ls
+AFL_USE_ASan=1 afl-gcc -fprofile-arcs -ftest-coverage selftls.c -o selftls libssl.a libcrypto.a -ldl
+ls
+./selftls 
+ls
+lcov --directory . --capture --output-file coverage.lcov
+genhtml coverage.lcov --output-directory html
+ls
+cp -R html/ html_handshake
+ls
+mkdir in
+mkdir out
+cp ../selftls/in/packet-1 ./in
+screen
+htop
+screen -r
+ls
+ls -la
+screen -r
+cd /opt/afl
+ls
+cd openssl-asan-gcov/
+ls
+cd selftls/
+ls
+./selftls ../../openssl-asan/selftls/out/fuzz-s03/crashes/id\:000000\,sig\:06\,src\:000000\,op\:havoc\,rep\:64 
+./selftls 1 ../../openssl-asan/selftls/out/fuzz-s03/crashes/id\:000000\,sig\:06\,src\:000000\,op\:havoc\,rep\:64 
+screen -r
+cd ../../openssl-asan
+ls
+cd selftls/
+ls
+./selftls 1 out/fuzz-s03/crashes/id\:000000\,sig\:06\,src\:000000\,op\:havoc\,rep\:64 
+cd ../../openssl-asan-gcov/
+cd openssl-OpenSSL_1_0_1f/
+ls
+./selftls 1 ../../openssl-asan/selftls/out/fuzz-s03/crashes/id\:000000\,sig\:06\,src\:000000\,op\:havoc\,rep\:64 
+readelf -s selftls
+readelf -s selftls | grep -i "asan"
+readelf -s ../../openssl-asan/selftls/selftls | grep -i "asan"
+ls
+lcov --directory . --capture --output-file coverage_afl_fuzz.lcov
+genhtml coverage.lcov --output-directory html_afl_fuzz
+genhtml coverage_afl_fuzz.lcov --output-directory html_afl_fuzz
+exit
+

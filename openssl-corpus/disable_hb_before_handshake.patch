@@ -1,0 +1,24 @@
+--- ssl/s3_pkt_old.c	2020-01-16 16:21:31.204428765 +0100
++++ ssl/s3_pkt.c	2020-01-19 10:28:14.784038494 +0100
+@@ -481,9 +481,9 @@
+ 		 * failure is directly visible from the ciphertext anyway,
+ 		 * we should not reveal which kind of error occured -- this
+ 		 * might become visible to an attacker (e.g. via a logfile) */
+-		al=SSL_AD_BAD_RECORD_MAC;
+-		SSLerr(SSL_F_SSL3_GET_RECORD,SSL_R_DECRYPTION_FAILED_OR_BAD_RECORD_MAC);
+-		goto f_err;
++//		al=SSL_AD_BAD_RECORD_MAC;
++//		SSLerr(SSL_F_SSL3_GET_RECORD,SSL_R_DECRYPTION_FAILED_OR_BAD_RECORD_MAC);
++//		goto f_err;
+ 		}
+ 
+ 	/* r->length is now just compressed */
+@@ -1088,7 +1088,7 @@
+ 			dest_len = &s->s3->alert_fragment_len;
+ 			}
+ #ifndef OPENSSL_NO_HEARTBEATS
+-		else if (rr->type == TLS1_RT_HEARTBEAT)
++		else if (rr->type == TLS1_RT_HEARTBEAT && SSL_is_init_finished(s))
+ 			{
+ 			tls1_process_heartbeat(s);
+ 
